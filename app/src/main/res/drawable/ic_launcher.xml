@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Background, matches the game's dark backdrop -->
+    <path
+        android:fillColor="#1C1C1C"
+        android:pathData="M0,0L108,0L108,108L0,108Z" />
+
+    <!-- Gold exclamation mark: "Help!" -->
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M46,16L62,16L59,68L49,68Z" />
+    <path
+        android:fillColor="#FFD700"
+        android:pathData="M46,78L62,78L62,94L46,94Z" />
+</vector>
