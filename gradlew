@@ -60,7 +60,7 @@ nonstop=false
 case "$( uname )" in                #(
   CYGWIN* )         cygwin=true  ;; #(
   Darwin* )         darwin=true  ;; #(
-  MSYS* / MINGW* )  msys=true    ;; #(
+  MSYS*|MINGW* )    msys=true    ;; #(
   NONSTOP* )        nonstop=true ;;
 esac
 
@@ -94,7 +94,7 @@ if ! "$cygwin" && ! "$msys" ; then
     case $( ulimit -S -n ) in       #(
       'unlimited'|2[0-9][0-9][0-9][0-9][0-9][0-9]) ;; #(
       *)                            # Here assume we're running on Linux (not Cygwin or msys)
-                                    ulimit -S -n 262144 ;;
+                                     ulimit -S -n 262144 ;;
     esac
 fi
 
